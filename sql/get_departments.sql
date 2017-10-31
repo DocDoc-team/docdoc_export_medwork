@@ -7,4 +7,4 @@ isnull(org.Phone, '') as phone from Dept as dpt
 left join Organisations as org
 on org.ID = dpt.OrgID
 where
- (isNull(archived,0) = '0') order by dpt.ID;
+ (isNull(dpt.archived,0) = '0') order by dpt.ID;
